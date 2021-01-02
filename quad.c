@@ -4,21 +4,23 @@ int main()
 {
     //declare x,a,b,c
 
-    int x,a,b,c;
+    int x1, x2, a, b, c;
 
     //input a,b,c
 
     printf("enter a,b,c values\n");
 
-    scanf("%d%d%d",&a,&b,&c);
+    scanf("%d%d%d", &a, &b, &c);
 
-    //calculate x
+    //calculate x1,x2
 
-    x=(-b+(b*b-4*a*c)/2*a);
+    x1 = (-b + (b*b - 4*a*c) / 2*a);
+
+    x2 = (-b - (b*b - 4*a*c) / 2*a);
 
     //output results
 
-    printf("%d",x);
+    printf("x = %d or %d", x1, x2);
 
     return 0;
 }
