@@ -20,7 +20,7 @@ int main()
 
     //output results
 
-    printf("x = %d or %d", x1, x2);
+    printf("x = %d or %d\n", x1, x2);
 
     return 0;
 }
