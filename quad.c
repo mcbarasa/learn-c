@@ -1,26 +1,19 @@
 #include<stdio.h>
 
 int main()
+
 {
-    //declare x,a,b,c
+   int a,b,c,x1,x2;
 
-    int x1, x2, a, b, c;
+   printf("enter a,b,c values\n");
 
-    //input a,b,c
+   scanf("%d%d%d", &a, &b, &c);
 
-    printf("enter a,b,c values\n");
+    x1=((-b+(b*b-(4*a*c))^1/2)/(2*a));
 
-    scanf("%d%d%d", &a, &b, &c);
+    x2=((-b-(b*b-(4*a*c))^1/2)/(2*a));
 
-    //calculate x1,x2
-
-    x1 = (-b + (b*b - 4*a*c) / 2*a);
-
-    x2 = (-b - (b*b - 4*a*c) / 2*a);
-
-    //output results
-
-    printf("x = %d or %d\n", x1, x2);
+    printf("%d\n%d\n ",x1, x2);
 
     return 0;
 }
